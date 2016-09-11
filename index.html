@@ -2,11 +2,139 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img src="" alt="" width="" height="">
+      </a>
+      <div class="page-header__main-nav-wrap">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a href="#" class="main-nav__toggle  main-nav__toggle--close" title="Открыть меню">Открыть меню</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-main-title">Милые штуки ручной  работы для дома</h1>
+      <ul class="main-page-catalog">
+        <li><a class="main-page-catalog__item  main-page-catalog__item--interior" href="#">Предметы  интерьера</a></li>
+        <li><a class="main-page-catalog__item  main-page-catalog__item--toys" href="#">Детские  игрушки</a></li>
+      </ul>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <article class="promo-offer">
+      <h1 class="promo-offer__header">Вязаные корзинки</h1>
+      <b class="promo-offer__type-of-offer">Товар недели</b>
+      <p class="promo-offer__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
+      <table class="promo-offer__characteristics">
+        <tr>
+          <td class="promo-offer__characteristic-item-col-1">Цвет:</td>
+          <td  class="promo-offer__characteristic-item-col-2">«Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <td class="promo-offer__characteristic-item-col-1">Диаметр:</td>
+          <td  class="promo-offer__characteristic-item-col-2">25 см</td>
+        </tr>
+        <tr>
+          <td class="promo-offer__characteristic-item-col-1">Высота:</td>
+          <td  class="promo-offer__characteristic-item-col-2">15 см</td>
+        </tr>
+      </table>
+      <a href="#" class="promo-offer__link">
+        <img src="" alt="" width="" height="">
+      </a>
+      <span class="promo-offer__price">Цена: 990 руб.</span>
+      <a href="#" class="btn">Заказать</a>
+    </article>
 
+    <section class="about-us">
+      <h1 class="about-us__header">Коротко о нас:</h1>
+      <ul class="about-us__list-of-features">
+        <li class="about-us__feature-item  about-us__feature-item--ecology">Экологически  чистые материалы</li>
+        <li class="about-us__feature-item  about-us__feature-item--price">Скандинавский стиль  по российской цене</li>
+        <li class="about-us__feature-item  about-us__feature-item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__feature-item  about-us__feature-item--knitting">Связано вручную с  любовью и умилением</li>
+        <li class="about-us__feature-item  about-us__feature-item--russian">Поддержка отечественного производителя</li>
+        <li class="about-us__feature-item  about-us__feature-item--wrapping">Поставляется в  подарочной упаковке</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h1 class="reviews__header">Отзывы</h1>
+      <div class="reviews__slider">
+          <div class="reviews__slider-wrap">
+            <div class="reviews__slide">
+              <blockquote class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+              </blockquote>
+              <span class="reviews__author">Анастасия Красильникова</span>
+              <span class="reviews__author-email">@misssssiskras</span>
+            </div>
+          </div>
+           <button class="reviews__previous">Предыдущий слайд</button>
+           <button class="reviews__next">Следующий слайд</button>
+      </div>
+         <a href="#" class="btn">Написать</a>
+    </section>
+
+    <section class="contacts">
+       <h1 class="contacts__header">Контакты</h1>
+       <table class="contacts__table">
+         <tr>
+           <td class="contacts__table-col-1">e-mail:</td>
+           <td class="contacts__table-col-2">
+            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </td>
+         </tr>
+         <tr>
+           <td class="contacts__table-col-1">адрес:</td>
+           <td class="contacts__table-col-2">
+            г. Санкт-Петербург, <br>
+            ул. Большая Конюшенная, д. 19/8, офис 101</td>
+         </tr>
+       </table>
+       <div class="contacts__map"></div>
+       <a href="#" class="btn">Напишите нам</a>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li><a class="social-link social-link--in" href="#" title="Мы в Инстаграм">Мы в Инстаграм</a></li>
+          <li><a class="social-link social-link--fb" href="#" title="Мы в Фейсбуке">Мы в Фейсбуке</a></li>
+          <li><a class="social-link social-link--tw" href="#" title="Мы в Твиттере">Мы в Твиттере</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">Разработано
+        <a href="#" class="page-footer__copyright-link" title="HTML Academy">HTML Academy</a>
+      </div>
+    </footer>
+
+    <div class="overlay"></div>
+    <div class="modal-content-order">
+      <h2>Добавить  в корзину</h2>
+      <span class="modal-content-order__choose-size">Выберите размер:</span>
+      <ul class="modal-content-order__choose-size-list">
+        <li class="modal-content-order__size  modal-content-order__size--active">S</li>
+        <li class="modal-content-order__size">M</li>
+        <li class="modal-content-order__size">L</li>
+      </ul>
+      <a href="#" class="modal-content-order__btn btn">Добавить</a>
+    </div>
   </body>
 </html>
