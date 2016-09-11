@@ -32,59 +32,60 @@
 
     <main class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
-      <ul class="catalog__list">
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="" alt="" width="" height="">
+        </a>
+        <a href="#" class="catalog-item__title-link">
+          <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
+        </a>
+        <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+        <footer class="catalog-item__footer">
+          <span class="catalog-item__price">1 200 руб.</span>
+          <a href="#" class="catalog-item__cart-link">В корзину</a>
+        </footer>
+      </article>
 
-        <li class="catalog__list-item">
-          <article class="catalog-item">
-            <a href="#" class="catalog-item__image-link">
-              <img src="" alt="" width="" height="">
-            </a>
-            <a href="#" class="catalog-item__title-link">
-              <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
-            </a>
-            <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-            <span class="catalog-item__price">1 200 руб.</span>
-            <a href="#" class="catalog-item__cart-link">В корзину</a>
-          </article>
-        </li>
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="" alt="" width="" height="">
+        </a>
+        <a href="#" class="catalog-item__title-link">
+          <h1 class="catalog-item__title">Корзинка для белья</h1>
+        </a>
+        <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+        <footer class="catalog-item__footer">
+          <span class="catalog-item__price">690 руб.</span>
+          <a href="#" class="catalog-item__cart-link">В корзину</a>
+        </footer>
+      </article>
 
-        <li class="catalog__list-item">
-          <article class="catalog-item">
-            <a href="#" class="catalog-item__image-link">
-              <img src="" alt="" width="" height="">
-            </a>
-            <a href="#" class="catalog-item__title-link">
-              <h1 class="catalog-item__title">Корзинка для белья</h1>
-            </a>
-            <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-            <span class="catalog-item__price">690 руб.</span>
-            <a href="#" class="catalog-item__cart-link">В корзину</a>
-          </article>
-        </li>
-
-        <li class="catalog__list-item">
-          <article class="catalog-item">
-            <a href="#" class="catalog-item__image-link">
-              <img src="" alt="" width="" height="">
-            </a>
-            <a href="#" class="catalog-item__title-link">
-              <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
-            </a>
-            <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-            <span class="catalog-item__price">1 500 руб.</span>
-            <a href="#" class="catalog-item__cart-link">В корзину</a>
-          </article>
-        </li>
-
-      </ul>
+      <article class="catalog-item">
+        <a href="#" class="catalog-item__image-link">
+          <img src="" alt="" width="" height="">
+        </a>
+        <a href="#" class="catalog-item__title-link">
+          <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
+        </a>
+        <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+        <footer class="catalog-item__footer">
+          <span class="catalog-item__price">1 500 руб.</span>
+          <a href="#" class="catalog-item__cart-link">В корзину</a>
+        </footer>
+      </article>
 
       <section class="production">
-        <h1 class="production__header">Процесс производства</h1>
+      <div class="production__video-wrap">
         <video src="" class="production__video" poster=""></video>
+      </div>
+      <div class="production__content-wrap">
+        <h1 class="production__header">Процесс производства</h1>
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="btn">Сделать заказ</a>
+      </div>
       </section>
 
-      <a href="#" class="btn">Сделать заказ</a>
+
     </main>
 
     <footer class="page-footer">
@@ -95,7 +96,8 @@
           <li><a class="social-link social-link--tw" href="#" title="Мы в Твиттере">Мы в Твиттере</a></li>
         </ul>
       </div>
-      <div class="page-footer__copyright">Разработано
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-title">Разработано</span>
         <a href="#" class="page-footer__copyright-link" title="HTML Academy">HTML Academy</a>
       </div>
     </footer>
@@ -104,12 +106,15 @@
     <div class="modal-content-order">
       <h2>Добавить  в корзину</h2>
       <span class="modal-content-order__choose-size">Выберите размер:</span>
-      <ul class="modal-content-order__choose-size-list">
-        <li class="modal-content-order__size  modal-content-order__size--active">S</li>
-        <li class="modal-content-order__size">M</li>
-        <li class="modal-content-order__size">L</li>
-      </ul>
-      <a href="#" class="modal-content-order__btn btn">Добавить</a>
+      <form class="modal-content-order__choose-size-list">
+        <input type="radio" name="size" id="size-S">
+        <label for="size-S">S</label>
+        <input type="radio" name="size" id="size-M">
+        <label for="size-M">M</label>
+        <input type="radio" name="size" id="size-L">
+        <label for="size-L">L</label>
+        <button class="modal-content-order__btn btn">Добавить</button>
+      </form>
     </div>
 </body>
 </html>
