@@ -1,0 +1,53 @@
+.promo-offer {
+  padding: 19px 30px 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    background: url("../img/zigzag-border.png") 0 0;
+    width: 100%;
+    height: 7px;
+  }
+}
+
+.promo-offer__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: round(30/25, 2);
+  margin-bottom: 0;
+}
+
+.promo-offer__type-of-offer {
+  color: @blue-82;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: round(16/17, 2);
+}
+
+.promo-offer__description {
+  color: @grey-27;
+}
+
+.promo-offer__characteristic-item-col-1,
+.promo-offer__characteristic-item-col-2 {
+  border-bottom: 1px solid @grey-93;
+}
+
+.promo-offer__characteristics {
+  width: 100%;
+  margin-bottom: 28px;
+  color: @grey-27;
+}
+
+.promo-offer__price {
+  font-weight: bold;
+  color: @grey-27;
+  font-size: 17px;
+  line-height: round(24/17, 2);
+  text-align: center;
+  display: block;
+  width: 255px;
+  margin: 0 auto;
+  padding-bottom: 21px;
+}

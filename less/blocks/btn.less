@@ -1,0 +1,81 @@
+.btn {
+  display: block;
+  text-decoration: none;
+  color: @grey-27;
+  border: 2px solid @grey-27;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 260px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  background: transparent;
+  outline: none;
+
+  &--promo-offer {
+    margin-bottom: 36px;
+  }
+
+  &--reviews-next,
+  &--reviews-previous {
+    border: 1px solid @grey-93;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    height: 52px;
+    margin-top: 24px;
+    margin-bottom: 38px;
+    cursor: pointer;
+  }
+
+  &--reviews-previous {
+    background: url("../img/icon-left-arrow.svg") 42px 14px no-repeat;
+  }
+
+  &--reviews-next {
+    background: url("../img/icon-right-arrow.svg") 42px 14px no-repeat;
+    margin-left: -4px;
+  }
+
+  &--reviews {
+    margin-bottom: 44px;
+  }
+
+  &--contacts {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  &--modal-content-order {
+    font-size: 17px;
+    border: none;
+    background: @blue-82;
+    color: @white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &--production-video-play {
+    position: absolute;
+    width: 102px;
+    height: 78px;
+    background: url("../img/icon-play.svg") 0 0 no-repeat;
+    top: 37px;
+    left: 68px;
+    border: none;
+  }
+
+  &--production-order {
+    width: 192px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--order-form-send {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
