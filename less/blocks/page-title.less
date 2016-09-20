@@ -1,10 +1,27 @@
 .page-title {
-  background: @white url("../img/hero-mobile@1x.jpg") 0 0 no-repeat;
+  background: @white url("../img/hero-mobile@1x.jpg") center -17px no-repeat;
   color: @black;
   font-size: 27px;
   line-height: round(30/27, 2);
   font-weight: bold;
-  padding: 62px 38px 112px;
+  padding:70px 8px 123px;
+  margin: 0;
   text-align: center;
-  background-size: contain;
+
+  @media @tablet-widths {
+    font-size: 43px;
+    line-height: round(50/43, 2);
+    padding-top: 67px;
+    padding-bottom: 373px;
+    background-size: 170%;
+    background-position: center -82px;
+  }
+
+  @media @desktop-widths {
+    font-size: 53px;
+    line-height: round(57/53, 2);
+    padding-bottom: 359px;
+    background-size: 108%;
+  }
+
 }

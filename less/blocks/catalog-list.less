@@ -1,0 +1,21 @@
+.catalog-list {
+  @media @desktop-widths {
+    display: flex;
+    flex-wrap: wrap;
+    .container;
+    position: relative;
+    top: -39px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 18px;
+  }
+
+  .catalog-item:nth-child(3n) {
+    margin-right: 0;
+
+    @media @desktop-widths {
+      margin-bottom: 0;
+    }
+  }
+}

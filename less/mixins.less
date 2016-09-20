@@ -13,3 +13,35 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+.container () {
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.line-height(@lh;@fz) {
+  line-height: round(@lh/@fz, 2);
+}

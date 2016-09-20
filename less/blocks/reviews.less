@@ -1,6 +1,9 @@
 .reviews {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-bottom: 23px;
+
+  @media @desktop-widths {
+    padding-bottom: 105px;
+  }
 
   &::after {
     content: "";
@@ -11,8 +14,47 @@
   }
 }
 
+.reviews__wrap {
+  .container;
+
+  @media @tablet-widths {
+    background: url(../img/review@1x.jpg) 0 0 no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+    margin-bottom: 74px;
+  }
+
+  @media @desktop-widths {
+    background-clip: content-box;
+    background-size: 34.7%;
+    margin-bottom: 0;
+    padding-bottom: 75px;
+  }
+}
+
 .reviews__header {
   font-weight: bold;
+  font-size: 25px;
+  line-height: round(30/25, 2);
+  margin-bottom: 24px;
+
+  @media @tablet-widths {
+    font-size: 43px;
+    line-height: round(50/43, 2);
+    width: 492px;
+    margin-top: 77px;
+    margin-left: -5px;
+    order: 1;
+  }
+
+  @media @desktop-widths {
+    font-size: 53px;
+    .line-height(57; 53);
+    margin-top: 69px;
+    margin-left: 171px;
+    width: 699px;
+  }
 }
 
 .reviews__text {
@@ -20,16 +62,69 @@
   margin-right: 0;
   color: @grey-27;
   line-height: 2;
+  margin-bottom: 26px;
+
+  @media @tablet-widths {
+    font-size: 17px;
+    line-height: round(30/17, 2);
+    margin-bottom: 58px;
+  }
+
+  @media @desktop-widths {
+    padding-right: 99px;
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__author {
   font-weight: bold;
   font-size: 18px;
   line-height: round(24/18, 2);
+
+  @media @tablet-widths {
+    font-size: 17px;
+    line-height: round(24/17, 2);
+    display: block;
+    margin-bottom: 3px;
+  }
 }
 
 .reviews__author-email {
   color: @grey-27;
   font-size: 18px;
   line-height: round(30/18, 2);
+
+  @media @tablet-widths {
+    font-size: 17px;
+    line-height: round(30/17, 2);
+  }
+}
+
+.reviews__slider-controls {
+  @media @tablet-widths {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+  }
+
+  @media @desktop-widths {
+    top: 100px;
+  }
+}
+
+.reviews__slider {
+  @media @tablet-widths {
+    order: 3;
+  }
+
+  @media @desktop-widths {
+    padding-left: 175px;
+    padding-bottom: 97px;
+  }
+}
+
+.reviews__slider-wrap {
+  @media @tablet-widths {
+    position: relative;
+  }
 }
