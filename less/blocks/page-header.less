@@ -1,16 +1,48 @@
 .page-header {
-  padding-top: 23px;
+  @media @tablet-widths {
+    padding-bottom: 8px;
+  }
+  @media @desktop-widths {
+    padding-bottom: 82px;
+  }
 }
 
 .page-header__logo-link {
   display: block;
-  margin: 0 auto;
-  padding-bottom: 22px;
-  border-bottom: 1px solid @grey-93;
+  padding-top: 23px;
+  @media @mobile-widths-only {
+    padding-bottom: 22px;
+    border-bottom: 1px solid @grey-93;
+  }
 
   img {
     margin: 0 auto;
     width: 86px;
     display: block;
   }
+}
+
+.page-header__wrap {
+  .container ();
+}
+
+.page-header__free-delivery {
+  @media @mobile-widths-only {
+    .visually-hidden;
+  }
+  @media @tablet-widths {
+    .font;
+    color: @grey-27;
+    position: relative;
+    top: -45px;
+    left: 438px;
+  }
+  @media @desktop-widths {
+    left: 820px;
+  }
+}
+
+.page-header__main-nav-wrap {
+  .container;
+  position: relative;
 }

@@ -1,52 +1,37 @@
 .main-page-catalog {
   .list-style-none;
+  @media @tablet-widths {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   li {
     padding: 0;
     margin: 0;
+    @media @tablet-widths {
+      width: 50%;
+    }
   }
 }
 
 .main-page-catalog__item {
-  position: relative;
   text-decoration: none;
   color: @white;
   background: @blue-82;
   display: block;
-  padding: 21px 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: round(24/19, 2);
-
-  &--interior{
-
-      &::after {
-      position: absolute;
-      top: 10px;
-      right: 30px;
-      content: "";
-      display: inline-block;
-      vertical-align: top;
-      width: 41px;
-      height: 62px;
-      background: url("../img/icon-interior.svg") 0 0 no-repeat;
-    }
+  padding-top: 25.5px;
+  padding-bottom: 29.5px;
+  @media @tablet-widths {
+    font-size: 20px;
+    line-height: round(30/20, 2);
+    padding-top: 26px;
   }
 
   &--toys {
-  background: @blue-76;
-
-    &::after {
-      position: absolute;
-      top: 10px;
-      right: 30px;
-      content: "";
-      display: inline-block;
-      vertical-align: top;
-      width: 61px;
-      height: 61px;
-      background: url("../img/icon-toy.svg") 0 0 no-repeat;
-    }
+    background: @blue-76;
   }
 }
 
@@ -54,4 +39,57 @@
   display: inline-block;
   vertical-align: top;
   width: 106px;
+}
+
+.main-page-catalog__wrap {
+  padding-bottom: 11px;
+  @media @tablet-widths {
+    .container;
+  }
+}
+
+.main-page-catalog__item-wrap {
+  .container;
+  position: relative;
+  @media @tablet-widths {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 100px;
+  }
+
+  &--toys {
+    &::after {
+      position: absolute;
+      top: -4px;
+      right: 24px;
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: 61px;
+      height: 61px;
+      background: url("../img/icon-toy.svg") 0 0 no-repeat;
+      @media @tablet-widths {
+        top: 5px;
+        right: 36px;
+      }
+    }
+  }
+
+  &--interior {
+    &::after {
+      position: absolute;
+      top: -2px;
+      right: 33px;
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: 41px;
+      height: 62px;
+      background: url("../img/icon-interior.svg") 0 0 no-repeat;
+      @media @tablet-widths {
+        top: 5px;
+        right: 36px;
+      }
+    }
+  }
 }

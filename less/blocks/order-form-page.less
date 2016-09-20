@@ -1,11 +1,30 @@
 .order-form-page__description {
-  padding-right: 30px;
-  padding-left: 30px;
   font-size: 13px;
   line-height: round(24/13,2);
   color: @grey-27;
+  .container;
+  margin-bottom: 20px;
+  @media @tablet-widths {
+    font-size: 17px;
+    .line-height(30; 17);
+    position: relative;
+    top: -44px;
+    margin-bottom: 36px;
+  }
+  @media @desktop-widths {
+    top: -69px;
+    padding-right: 225px;
+    padding-left: 225px;
+  }
 }
 
 .order-form-page {
-  padding-bottom: 55px;
+  padding-bottom: 56px;
+  @media @tablet-widths {
+    padding-bottom: 0;
+  }
+}
+
+.order-form-page__title {
+  margin-bottom: 23px;
 }

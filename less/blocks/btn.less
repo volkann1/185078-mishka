@@ -3,8 +3,8 @@
   text-decoration: none;
   color: @grey-27;
   border: 2px solid @grey-27;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 260px;
   text-align: center;
   font-weight: bold;
@@ -12,9 +12,19 @@
   text-transform: uppercase;
   background: transparent;
   outline: none;
+  margin: 0 auto;
 
   &--promo-offer {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
+    @media @tablet-widths {
+      width: 291px;
+      margin: 0 0 59px;
+    }
+    @media @desktop-widths {
+      width: 293px;
+      padding-left: 6px;
+      margin-bottom: 81px;
+    }
   }
 
   &--reviews-next,
@@ -25,27 +35,34 @@
     vertical-align: top;
     width: 130px;
     height: 52px;
-    margin-top: 24px;
-    margin-bottom: 38px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     cursor: pointer;
+    @media @tablet-widths {
+      border: none;
+      width: 88px;
+    }
   }
 
   &--reviews-previous {
-    background: url("../img/icon-left-arrow.svg") 42px 14px no-repeat;
+    background: url("../img/icon-left-arrow.svg") 38px 14px no-repeat;
   }
 
   &--reviews-next {
-    background: url("../img/icon-right-arrow.svg") 42px 14px no-repeat;
+    background: url("../img/icon-right-arrow.svg") 38px 14px no-repeat;
     margin-left: -4px;
   }
 
   &--reviews {
     margin-bottom: 44px;
-  }
-
-  &--contacts {
-    margin-right: 30px;
-    margin-left: 30px;
+    @media @tablet-widths {
+      order: 2;
+      width: 175px;
+      align-self: flex-end;
+      margin-top: 80px;
+      margin-left: 5px;
+      margin-bottom: 27px;
+    }
   }
 
   &--modal-content-order {
@@ -62,9 +79,17 @@
     width: 102px;
     height: 78px;
     background: url("../img/icon-play.svg") 0 0 no-repeat;
-    top: 37px;
-    left: 68px;
+    top: 39px;
+    left: 80px;
     border: none;
+    @media @tablet-widths {
+      top: 194px;
+      left: 283px;
+    }
+    @media @desktop-widths {
+      top: 189px;
+      left: 298px;
+    }
   }
 
   &--production-order {
@@ -72,10 +97,43 @@
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 33px;
+    @media @tablet-widths {
+      width: 584px;
+      margin-bottom: 46px;
+    }
+    @media @desktop-widths {
+      width: 231px;
+      margin-bottom: 0;
+      margin-left: 78px;
+    }
   }
 
   &--order-form-send {
     padding-top: 10px;
     padding-bottom: 10px;
+    @media @tablet-widths {
+      position: relative;
+      top: -38px;
+      transform: translate(-219px);
+      width: 230px;
+    }
+    @media @desktop-widths {
+      transform: translate(-236px);
+    }
+  }
+
+  &--contacts {
+    @media @mobile-widths-only {}
+    @media @tablet-widths {
+      width: 230px;
+      padding-bottom: 11px;
+    }
+    @media @desktop-widths {
+      margin-top: 0;
+      margin-left: 175px;
+      position: relative;
+      top: -105px;
+    }
   }
 }

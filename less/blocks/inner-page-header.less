@@ -2,7 +2,30 @@
   font-weight: bold;
   font-size: 27px;
   line-height: round(30/27, 2);
-  padding: 65px 30px;
+  padding: 71px 0 76px;
   margin-bottom: 30px;
   background: @grey-95;
+  text-align: center;
+  margin-top: 0;
+  @media @tablet-widths {
+    position: relative;
+    top: -94px;
+    z-index: -1;
+    font-size: 43px;
+    .line-height (50; 43);
+    margin-bottom: 0;
+    padding-top: 95px;
+    padding-bottom: 80px;
+  }
+  @media @desktop-widths {
+    font-size: 53px;
+    .line-height(57; 53);
+    top: -170px;
+    padding-bottom: 101px;
+  }
+}
+
+.inner-page-header__wrap {
+  .container;
+  display: block;
 }

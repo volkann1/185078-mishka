@@ -1,14 +1,29 @@
 .production {
-  border: 1px solid @grey-93;
-  padding-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 58px;
-  padding-bottom: 33px;
+  padding-bottom: 0;
+  @media @tablet-widths {
+    margin-bottom: 64px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 103px;
+  }
 }
 
 .production__video-wrap {
   position: relative;
+  @media @mobile-widths-only {
+    position: absolute;
+    top: 96px;
+    left: 0;
+  }
+  @media @tablet-widths {
+    padding-bottom: 7px;
+  }
+  @media @desktop-widths {
+    padding-bottom: 0;
+  }
 }
 
 .production__header {
@@ -16,6 +31,21 @@
   line-height: round(24/17, 2);
   font-weight: bold;
   display: flex;
+  margin-top: 23px;
+  @media @mobile-widths-only {
+    padding-bottom: 189px;
+  }
+  @media @tablet-widths {
+    font-size: 20px;
+    .line-height(24; 20);
+    margin-bottom: 32px;
+  }
+  @media @desktop-widths {
+    margin-top: 94px;
+    position: relative;
+    padding-left: 78px;
+    width: 120px;
+  }
 
   &::before {
     content: "";
@@ -23,9 +53,19 @@
     width: 40px;
     height: 27px;
     background: url("../img/icon-video.svg") 0 0 no-repeat;
-    margin-left: 33px;
+    margin-left: 34px;
     margin-right: 25px;
     box-sizing: content-box;
+    margin-top: 7px;
+    @media @tablet-widths {
+      margin-top: -4px;
+      margin-left: 41px;
+    }
+    @media @desktop-widths {
+      position: absolute;
+      top: -49px;
+      left: 38px;
+    }
   }
 }
 
@@ -35,4 +75,52 @@
   padding-left: 34px;
   padding-right: 41px;
   color: @grey-27;
+  margin-bottom: 25px;
+  @media @tablet-widths {
+    font-size: 15px;
+    .line-height(30; 15);
+    padding-left: 40px;
+    margin-bottom: 36px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 48px;
+    padding-left: 77px;
+  }
+}
+
+.production__wrap {
+  .container;
+  padding-left: 0;
+  padding-right: 0;
+  border: 1px solid #ececec;
+  width: 260px;
+  @media @mobile-widths-only {
+    position: relative;
+  }
+  @media @tablet-widths {
+    width: 668px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media @desktop-widths {
+    width: 1048px;
+    display: flex;
+  }
+}
+
+.production__video {
+  @media @tablet-widths {
+    width: 668px;
+    height: 455px;
+  }
+  @media @desktop-widths {
+    width: 682px;
+    display: block;
+  }
+}
+
+.production__content-wrap {
+  @media @desktop-widths {
+    width: 345px;
+  }
 }
