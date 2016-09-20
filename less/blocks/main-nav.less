@@ -1,17 +1,15 @@
 .main-nav {
   &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 1px;
-      background: @grey-91;
-      width: 100%;
-
-   @media @mobile-widths-only  {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: @grey-91;
+    width: 100%;
+    @media @mobile-widths-only {
       top: 80px;
     }
-
-   @media @tablet-widths  {
+    @media @tablet-widths {
       top: 86px;
     }
   }
@@ -23,8 +21,8 @@
 
     .main-nav__item-1-level {
       @media @mobile-widths-only {
-        &--catalog,
         &--cart,
+        &--catalog,
         &--new {
           display: none;
         }
@@ -43,7 +41,7 @@
           position: absolute;
           top: 81px;
           background: @white;
-          z-index:2;
+          z-index: 2;
           width: 320px;
         }
 
@@ -73,14 +71,14 @@
   }
 
   &--nojs {
-    .main-nav__toggle{
+    .main-nav__toggle {
       display: none;
     }
 
     .main-nav__item-1-level {
       @media @mobile-widths-only {
-        &--catalog,
-        &--cart {
+        &--cart,
+        &--catalog {
           display: block;
         }
       }
@@ -100,7 +98,6 @@
   border: none;
   outline: none;
   cursor: pointer;
-
   @media @tablet-widths {
     display: none;
   }
@@ -108,7 +105,6 @@
 
 .main-nav__list-1-level {
   .list-style-none();
-
   @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +121,6 @@
       }
     }
   }
-
   @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
@@ -133,17 +128,17 @@
 }
 
 .main-nav__item-link {
-    position: relative;
-    .not-link;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: round(24/17, 2);
-    display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-left: 45px;
-    width: 255px;
-    margin: 0 auto;
+  position: relative;
+  .not-link;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: round(24/17, 2);
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 45px;
+  width: 255px;
+  margin: 0 auto;
 }
 
 .main-nav__item-2-level {
@@ -151,7 +146,7 @@
     border-bottom: 1px solid @grey-93;
   }
 
-  &--search{
+  &--search {
     @media @tablet-widths {
       width: 85px;
       border-right: 1px solid @grey-93;
@@ -176,7 +171,6 @@
         background: url("../img/icon-search.svg") 0 0 no-repeat;
         top: 26px;
         left: 0;
-
         @media @tablet-widths {
           top: 36px;
           left: 0;
@@ -209,7 +203,6 @@
         background: url("../img/icon-cart.svg") 0 0 no-repeat;
         top: 26px;
         left: 0;
-
         @media @tablet-widths {
           top: 34px;
           left: 29px;
@@ -221,12 +214,10 @@
 
 .main-nav__item-1-level {
   &--logo {
-
     @media @tablet-widths {
       padding-right: 233px;
       order: -2;
     }
-
     @media @desktop-widths {
       padding-right: 145px;
     }
@@ -239,20 +230,19 @@
   }
 
   &--catalog {
-    @media  @tablet-widths {
+    @media @tablet-widths {
       max-width: 790px;
     }
-
     @media @desktop-widths {
-      order:-3;
+      order: -3;
     }
 
     & li {
       &:first-child {
         @media @desktop-widths {
-            border-right: 1px solid @grey-93;
-          }
+          border-right: 1px solid @grey-93;
         }
+      }
 
       &:not(:first-child) {
         @media @desktop-widths {
@@ -262,12 +252,12 @@
     }
 
     .main-nav__item-link {
-      @media  @tablet-widths {
+      @media @tablet-widths {
         padding-top: 17px;
         padding-left: 0;
-        width: 165px
+        width: 165px;
       }
-      @media  @tablet-widths and @mobile-tablet-widths-only {
+      @media @tablet-widths and @mobile-tablet-widths-only {
         font-size: 15px;
         line-height: round(24/15, 2);
       }
@@ -277,8 +267,9 @@
         padding-bottom: 34px;
       }
     }
+
     .main-nav__list-2-level {
-      @media  @tablet-widths {
+      @media @tablet-widths {
         width: 470px;
       }
     }
@@ -286,9 +277,8 @@
 
   &--new {
     @media @mobile-tablet-widths-only {
-        display: none;
+      display: none;
     }
-
     @media @desktop-widths {
       max-width: 800px;
     }
