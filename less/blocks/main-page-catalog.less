@@ -30,8 +30,30 @@
     padding-top: 26px;
   }
 
+  &:hover {
+    padding-bottom: 34.5px;
+    background: @blue-84;
+  }
+
+  &:active {
+    background: @blue-84;
+    color: fade(@white, 30);
+
+    .main-page-catalog__item-wrap::after {
+      opacity: 0.3;
+    }
+  }
+
   &--toys {
     background: @blue-76;
+
+    &:hover {
+      background: @blue-76-1;
+    }
+
+    &:active {
+      background: @blue-76-1;
+    }
   }
 }
 
