@@ -1,14 +1,20 @@
 .modal-content-order {
   position: fixed;
-  padding: 21px 30px 46px;
+  padding: 31px 30px 46px;
   position: fixed;
-  top: 50px;
-  left: 0;
+  top: 50%;
+  left: 50%;
   background: @white;
   border-top: 1px solid @grey-78;
   border-bottom: 1px solid @grey-78;
   box-shadow: 0 5px 11px @black-a;
   display: none;
+  margin-left: -160px;
+  margin-top: -169px;
+  @media @tablet-widths {
+    width: 569px;
+    margin-left: -284.5px;
+  }
 }
 
 .modal-content-order__title {
@@ -19,6 +25,17 @@
   text-align: center;
   width: 255px;
   margin: 0 auto 15px;
+  @media @tablet-widths {
+    font-size: 30px;
+    .line-height(57; 30);
+    width: 354px;
+  }
+
+  br {
+    @media @tablet-widths {
+      display: none;
+    }
+  }
 }
 
 .modal-content-order__choose-size {
@@ -27,8 +44,13 @@
   width: 255px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 17px;
+  margin-bottom: 31px;
   color: @grey-27;
+  @media @tablet-widths {
+    font-size: 17px;
+    .line-height(30; 17);
+    margin-bottom: 22px;
+  }
 }
 
 .modal-content-order__size {
@@ -41,6 +63,9 @@
 
 .modal-content-order__choose-size-list {
   font-size: 0;
+  @media @tablet-widths {
+    text-align: center;
+  }
 }
 
 .modal-content-order__size-label {
@@ -49,16 +74,28 @@
   border: 2px solid @grey-93;
   color: @grey-27;
   width: 82px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 18px;
   line-height: round(16/17, 2);
   display: inline-block;
   vertical-align: top;
   margin-right: 7px;
   margin-bottom: 31px;
   cursor: pointer;
+  @media @tablet-widths {
+    width: 110px;
+  }
+
+  &:hover {
+    border-color: @grey-78;
+  }
 
   &:last-of-type {
     margin-right: 0;
+    margin-bottom: 30px;
   }
+}
+
+.modal-content--show {
+  display: block;
 }

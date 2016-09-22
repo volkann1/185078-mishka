@@ -18,10 +18,7 @@
   }
   @media @tablet-widths {
     padding-top: 33px;
-    padding-right: 81px;
-  }
-  @media @desktop-widths {
-    padding-right: 272px;
+    width: 33.3%;
   }
 }
 
@@ -32,6 +29,12 @@
   margin: 0 auto;
   @media @tablet-widths {
     padding-top: 26px;
+    width: 33.3%;
+    display: flex;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -39,6 +42,10 @@
   font-weight: bold;
   font-size: 19px;
   margin-right: 25px;
+  @media @tablet-widths {
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }
 
 .page-footer__copyright-link {
@@ -56,10 +63,11 @@
     display: none;
   }
   @media @tablet-widths {
-    width: 261px;
+    width: 33.3%;
     margin-top: 21px;
   }
-  @media @desktop-widths {
-    width: 453px;
+
+  &:active {
+    opacity: 0.3;
   }
 }

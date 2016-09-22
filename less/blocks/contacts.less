@@ -37,7 +37,6 @@
     width: 100%;
     background: url("../img/icon-flag.svg") 623px 27px no-repeat;
     margin-top: 0;
-    margin-left: -5px;
     padding-top: 41px;
     padding-bottom: 32px;
     margin-bottom: 0;
@@ -113,11 +112,19 @@
   @media @tablet-widths {
     margin-left: 23px;
   }
+
+  &:hover {
+    color: @blue-76-1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
   min-height: 457px;
-  background: @white url("../img/map-mobile@1x.jpg") center 0 no-repeat;
+  background: url("../img/icon-map-pin.svg") center center no-repeat, url("../img/map-mobile@1x.jpg") center 0 no-repeat;
   margin-bottom: 40px;
   @media @tablet-widths {
     margin-bottom: 55px;

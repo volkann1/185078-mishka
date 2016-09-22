@@ -98,6 +98,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 2;
   @media @tablet-widths {
     display: none;
   }
@@ -108,6 +109,16 @@
   @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  a {
+    &:hover {
+      color: @black-a6;
+    }
+
+    &:active {
+      color: @black-a3;
+    }
   }
 }
 
@@ -151,14 +162,14 @@
       width: 85px;
       border-right: 1px solid @grey-93;
       border-left: 1px solid @grey-93;
-      padding-left: 30px;
     }
 
     a {
       @media @tablet-widths {
         font-size: 0;
         padding-top: 36px;
-        padding-bottom: 33px;
+        width: 82px;
+        padding-bottom: 51px;
       }
 
       &::before {
@@ -173,7 +184,7 @@
         left: 0;
         @media @tablet-widths {
           top: 36px;
-          left: 0;
+          left: 30px;
         }
       }
     }
