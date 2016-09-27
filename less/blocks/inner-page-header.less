@@ -16,13 +16,29 @@
     margin-bottom: 0;
     padding-top: 95px;
     padding-bottom: 80px;
+    &::after {
+      content: "";
+      height: 24px;
+      background: url(../img/bg-zigzag-fill.svg) 0 0 no-repeat;
+      background-size: auto 24px;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+    }
   }
   @media @desktop-widths {
     font-size: 53px;
     .line-height(57; 53);
     top: -170px;
     padding-bottom: 101px;
+    &::after {
+      height: 34px;
+      background-size: auto 34px;
+      bottom: -20px;
+    }
   }
+
 }
 
 .inner-page-header__wrap {

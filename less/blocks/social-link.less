@@ -3,26 +3,28 @@
   .not-link;
   display: block;
   margin-right: 40px;
-
+  path {
+    fill: #221f1f;
+  }
+  &:hover path {
+    fill: @blue-76-1;
+  }
   &:active {
     opacity: 0.3;
   }
 
   &--in {
-    background: url("../img/icon-insta.svg") 0 0 no-repeat;
     width: 22px;
     height: 21px;
   }
 
   &--tw {
-    background: url("../img/icon-twitter.svg") 0 0 no-repeat;
     width: 24px;
     height: 20px;
     margin-right: 0;
   }
 
   &--fb {
-    background: url("../img/icon-fb.svg") 0 0 no-repeat;
     width: 15px;
     height: 29px;
     margin-top: -6px;

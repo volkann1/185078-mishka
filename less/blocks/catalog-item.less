@@ -181,12 +181,20 @@
   vertical-align: top;
   width: 21px;
   height: 19px;
-  background: url("../img/icon-cart.svg") 0 0 no-repeat;
   position: absolute;
   top: 23px;
   right: -4px;
   @media @desktop-widths {
     right: 8px;
+  }
+  path {
+    fill: #cccccc;
+  }
+  &:hover path {
+    fill: @blue-82;
+  }
+  &:active {
+    opacity: .3;
   }
 }
 

@@ -1,18 +1,27 @@
 .promo-offer {
   padding-bottom: 28px;
   @media @tablet-widths {
-    padding-bottom: 53px;
+    padding-bottom: 45px;
   }
   @media @desktop-widths {
-    padding-bottom: 67px;
+    padding-bottom: 51px;
   }
 
   &::after {
     content: "";
     display: block;
-    background: url("../img/zigzag-border.png") 0 0;
+    background: url("../img/bg-zigzag-line.svg") 0 0;
     width: 100%;
     height: 7px;
+    background-size: auto 7px;
+    @media @tablet-widths {
+      height: 17px;
+      background-size: auto 17px;
+    }
+    @media @desktop-widths {
+      height: 23px;
+      background-size: auto 23px;
+    }
   }
 }
 

@@ -7,6 +7,10 @@
   padding: 70px 8px 123px;
   margin: 0;
   text-align: center;
+  background-size: 575px auto;
+  @media @retina {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
   @media @tablet-widths {
     font-size: 43px;
     line-height: round(50/43, 2);
@@ -19,6 +23,10 @@
     font-size: 53px;
     line-height: round(57/53, 2);
     padding-bottom: 359px;
-    background-size: 108%;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1150px auto;
+    @media (min-resolution:144dpi),(min-resolution:1.5dppx){
+      background-image: url(../img/hero-desktop@2x.jpg);
+    }
   }
 }
