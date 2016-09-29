@@ -30,50 +30,49 @@
     padding-top: 26px;
     position: relative;
     padding-bottom: 33.5px;
-
-    &--interior {
-      &::after {
-        content: "";
-        width: 100%;
-        height: 24px;
-        background: url("../img/bg-zigzag-fill.svg") -14px 0 no-repeat;
-        position: absolute;
-        left: 0;
-        background-size: auto 23px;
-        bottom: -15px;
-      }
-    }
-
-    &--toys {
-      &::after {
-        content: "";
-        width: 100%;
-        height: 24px;
-        background: url("../img/bg-zigzag-fill.svg") -1px 0 no-repeat;
-        position: absolute;
-        left: 0;
-        background-size: auto 23px;
-        bottom: -15px;
-      }
-    }
-  }
-  @media @desktop-widths {
-    &--interior {
-      &::after {
-        height: 34px;
-        background-size: auto 34px;
-        bottom: -17px;
-        background-position: -50px 0;
-      }
-    }
-
-    &--toys {
-      &::after {
-        height: 34px;
-        background-size: auto 34px;
-        bottom: -17px;
-      }
-    }
+    //   &--interior {
+    //     &::after {
+    //       content: "";
+    //       width: 100%;
+    //       height: 24px;
+    //       background: url("../img/bg-zigzag-fill.svg") -14px 0 no-repeat;
+    //       position: absolute;
+    //       left: 0;
+    //       background-size: auto 23px;
+    //       bottom: -15px;
+    //     }
+    //   }
+    //
+    //   &--toys {
+    //     &::after {
+    //       content: "";
+    //       width: 100%;
+    //       height: 24px;
+    //       background: url("../img/bg-zigzag-fill.svg") -1px 0 no-repeat;
+    //       position: absolute;
+    //       left: 0;
+    //       background-size: auto 23px;
+    //       bottom: -15px;
+    //     }
+    //   }
+    // }
+    // @media @desktop-widths {
+    //   &--interior {
+    //     &::after {
+    //       height: 34px;
+    //       background-size: auto 34px;
+    //       bottom: -17px;
+    //       background-position: -50px 0;
+    //     }
+    //   }
+    //
+    //   &--toys {
+    //     &::after {
+    //       height: 34px;
+    //       background-size: auto 34px;
+    //       bottom: -17px;
+    //     }
+    //   }
   }
 
   &:hover {
@@ -111,7 +110,6 @@
 
 .main-page-catalog__wrap {
   padding-bottom: 11px;
-  background: #f9f9f9;
   @media @tablet-widths {
     .container;
   }
@@ -165,4 +163,24 @@
 
 .main-page-catalog__container {
   background: #f9f9f9;
+  position: relative;
+
+  &::after {
+    @media @tablet-widths {
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: -2px;
+      display: block;
+      background: url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
+      background-size: auto 23px;
+      height: 23px;
+    }
+    @media @desktop-widths {
+      background: url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
+      background-size: auto 34px;
+      height: 34px;
+      bottom: -6px;
+    }
+  }
 }
