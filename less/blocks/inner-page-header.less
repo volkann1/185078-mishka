@@ -9,19 +9,36 @@
   margin-top: 0;
   @media @tablet-widths {
     position: relative;
-    top: -94px;
+    top: -90px;
     z-index: -1;
     font-size: 43px;
     .line-height (50; 43);
     margin-bottom: 0;
     padding-top: 95px;
     padding-bottom: 80px;
+
+    &::after {
+      content: "";
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") 0 0 repeat;
+      background-size: auto 24px;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+    }
   }
   @media @desktop-widths {
     font-size: 53px;
     .line-height(57; 53);
-    top: -170px;
+    top: -167px;
     padding-bottom: 101px;
+
+    &::after {
+      height: 34px;
+      background-size: auto 34px;
+      bottom: -20px;
+    }
   }
 }
 

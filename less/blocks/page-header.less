@@ -1,9 +1,9 @@
 .page-header {
   @media @tablet-widths {
-    padding-bottom: 8px;
+    padding-bottom: 17px;
   }
   @media @desktop-widths {
-    padding-bottom: 82px;
+    padding-bottom: 90px;
   }
 }
 
@@ -11,6 +11,9 @@
   display: block;
   padding-top: 23px;
   cursor: pointer;
+  @media @desktop-widths {
+    padding-top: 9px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -28,11 +31,24 @@
     margin: 0 auto;
     width: 86px;
     display: block;
+    @media @tablet-widths {
+      height: 46px;
+      width: 113px;
+    }
+    @media @desktop-widths {
+      height: 72px;
+      width: 149px;
+    }
   }
 }
 
 .page-header__wrap {
   .container ();
+  background: #f9f9f9;
+
+  &--inner {
+    background: transparent;
+  }
 }
 
 .page-header__free-delivery {
@@ -54,4 +70,9 @@
 .page-header__main-nav-wrap {
   .container;
   position: relative;
+}
+
+.page-header__container {
+  background: #f9f9f9;
+  width: 100%;
 }

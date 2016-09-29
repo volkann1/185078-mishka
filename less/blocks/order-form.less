@@ -68,18 +68,20 @@
   background: @white;
   display: inline-block;
   vertical-align: top;
-  width: 63px;
+  width: 144px;
   margin-bottom: 28px;
   @media @tablet-widths {
     margin-top: 14px;
+    width: 136px;
     background: transparent;
   }
   @media @desktop-widths {
+    width: 144px;
     padding-left: 59px;
   }
 
   &--email {
-    width: 83px;
+    width: 129px;
     margin-bottom: 12px;
   }
 
@@ -249,7 +251,7 @@
         margin-bottom: 38px;
       }
       @media @desktop-widths {
-        width: 623px;
+        width: 622px;
         flex-grow: 0;
       }
     }
@@ -299,6 +301,7 @@
   font-size: 17px;
   .line-height(18; 17);
   color: @grey-27;
+  outline: none;
   @media @tablet-widths {
     width: auto;
     flex-grow: 1;
@@ -306,7 +309,7 @@
     .line-height(18; 19);
   }
 
-  &:invalid {
+  &--invalid {
     border-bottom: 2px solid @pink;
     outline: none;
   }
@@ -365,6 +368,7 @@
   font-size: 17px;
   .line-height(18; 17);
   color: @grey-27;
+  outline: none;
   @media @tablet-widths {
     font-size: 19px;
     .line-height(18; 19);
@@ -378,13 +382,29 @@
     margin-left: 29px;
   }
 
-  &:invalid {
+  &--invalid {
     border-bottom: 2px solid @pink;
     outline: none;
   }
 
   &:hover {
     border-color: @blue-82-1;
+  }
+
+  &:hover + svg {
+    fill: @blue-82-1;
+  }
+
+  &:focus + svg {
+    fill: @blue-82-1;
+  }
+
+  &:hover + svg path {
+    fill: @blue-82-1;
+  }
+
+  &:focus + svg path {
+    fill: @blue-82-1;
   }
 
   &:focus {
@@ -466,7 +486,7 @@
   &--name {
     margin-bottom: 9px;
     @media @tablet-widths {
-      margin-bottom: 27px;
+      margin-bottom: 30px;
     }
   }
 
@@ -491,6 +511,7 @@
   font-size: 17px;
   .line-height(18; 17);
   color: @grey-27;
+  outline: none;
   @media @tablet-widths {
     font-size: 19px;
     .line-height(18; 19);
@@ -503,13 +524,29 @@
     margin-left: 29px;
   }
 
-  &:invalid {
+  &--invalid {
     border-bottom: 2px solid @pink;
     outline: none;
   }
 
   &:hover {
     border-color: @blue-82-1;
+  }
+
+  &:hover + svg path {
+    fill: @blue-82-1;
+  }
+
+  &:focus + svg path {
+    fill: @blue-82-1;
+  }
+
+  &:hover + svg {
+    fill: @blue-82-1;
+  }
+
+  &:focus + svg {
+    fill: @blue-82-1;
   }
 
   &:focus {
@@ -561,6 +598,7 @@
   line-height: round(18/17, 2);
   color: @grey-a;
   padding: 12px 15px;
+  outline: none;
   @media @tablet-widths {
     font-size: 19px;
     .line-height(18; 19);
@@ -572,7 +610,7 @@
     margin-top: 3px;
   }
 
-  &:invalid {
+  &--invalid {
     border: 2px solid @pink;
     outline: none;
   }
@@ -640,15 +678,10 @@
   }
 
   &--tel {
-    &::after {
-      content: "";
-      display: block;
+    svg {
       position: absolute;
       top: 38px;
       right: 8px;
-      width: 25px;
-      height: 24px;
-      background: url("../img/icon-phone.svg") 0 0 no-repeat;
       @media @tablet-widths {
         top: 10px;
         right: 78px;
@@ -658,18 +691,17 @@
         right: 234px;
       }
     }
+
+    svg {
+      fill: #cccccc;
+    }
   }
 
   &--email {
-    &::after {
-      content: "";
-      display: block;
+    svg {
       position: absolute;
       top: 37px;
       right: 4px;
-      width: 32px;
-      height: 28px;
-      background: url("../img/icon-mail.svg") 0 0 no-repeat;
       @media @tablet-widths {
         top: 10px;
         right: 73px;
@@ -678,6 +710,10 @@
         top: 12px;
         right: 230px;
       }
+    }
+
+    svg {
+      fill: #cccccc;
     }
   }
 }

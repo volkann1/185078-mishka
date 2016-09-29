@@ -8,7 +8,7 @@
     top: -15px;
   }
   @media @desktop-widths {
-    width: 320px;
+    width: 318px;
     position: static;
     padding-left: 0;
     padding-right: 0;
@@ -32,6 +32,13 @@
 .catalog-item__image-link {
   margin-bottom: 26px;
   display: block;
+  @media @mobile-widths-only {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+  }
   @media @tablet-widths {
     margin-bottom: 0;
   }
@@ -53,6 +60,9 @@
 
 .catalog-item__title {
   margin-bottom: 6px;
+  @media @mobile-widths-only {
+    margin-top: 0;
+  }
   @media @desktop-widths {
     margin-top: 18px;
     margin-left: 5px;
@@ -77,6 +87,7 @@
   }
   @media @desktop-widths {
     width: auto;
+    padding-left: 20px;
   }
 
   &:hover {
@@ -102,6 +113,7 @@
   }
   @media @desktop-widths {
     padding-bottom: 69px;
+    padding-left: 26px;
   }
 }
 
@@ -121,6 +133,7 @@
     top: 121px;
     width: 264px;
     margin-right: 0;
+    margin-left: 26px;
   }
 
   &:hover {
@@ -181,12 +194,23 @@
   vertical-align: top;
   width: 21px;
   height: 19px;
-  background: url("../img/icon-cart.svg") 0 0 no-repeat;
   position: absolute;
   top: 23px;
   right: -4px;
   @media @desktop-widths {
     right: 8px;
+  }
+
+  svg {
+    fill: #cccccc;
+  }
+
+  &:hover svg {
+    fill: @blue-82;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
