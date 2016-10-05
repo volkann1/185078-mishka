@@ -124,9 +124,9 @@
     content: "";
     display: inline-block;
     vertical-align: top;
-    box-sizing: content-box;
-    width: 16px;
-    height: 16px;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
     background: @white;
     border: 9px solid @white;
     box-shadow: 0 0 0 2px @grey-27;
@@ -134,7 +134,14 @@
     margin-right: 27px;
     margin-left: 4px;
     margin-top: -5px;
+    @media @mobile-widths-only {
+      min-width: 34px;
+      min-height: 34px;
+      max-width: 34px;
+      max-height: 34px;
+    }
     @media @tablet-widths {
+      box-sizing: content-box;
       width: 22px;
       height: 22px;
       border-width: 13px;
