@@ -68,7 +68,7 @@
   background: @white;
   display: inline-block;
   vertical-align: top;
-  width: 144px;
+  width: 65px;
   margin-bottom: 28px;
   @media @tablet-widths {
     margin-top: 14px;
@@ -112,15 +112,21 @@
   display: flex;
   cursor: pointer;
   margin-top: 5px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
+  padding-left: 63px;
+  position: relative;
   @media @tablet-widths {
     font-size: 19px;
     .line-height (18; 19);
     margin-top: 16px;
-    margin-bottom: 43px;
+    margin-bottom: 59px;
+    max-width: 556px;
+    padding-left: 80px;
   }
   @media @desktop-widths {
     margin-top: 15px;
+    min-width: 926px;
+    padding-left: 87px;
   }
   &::before {
     content: "";
@@ -136,6 +142,8 @@
     margin-right: 27px;
     margin-left: 4px;
     margin-top: -5px;
+    position: absolute;
+    left: 0;
     @media @mobile-widths-only {
       min-width: 34px;
       min-height: 34px;
@@ -197,11 +205,9 @@
     .line-height (18; 19);
     width: 50%;
     margin-top: 3px;
-    padding-left: 30px;
   }
   @media @desktop-widths {
     width: 231px;
-    padding-left: 30px;
     margin-right: 32px;
   }
 
@@ -263,7 +269,7 @@
         margin-bottom: 38px;
       }
       @media @desktop-widths {
-        width: 622px;
+        width: 595px;
         flex-grow: 0;
       }
     }
@@ -478,9 +484,9 @@
   }
 
   &--type {
-    margin-bottom: -2px;
+    margin-bottom: 38px;
     @media @tablet-widths {
-      margin-bottom: 11px;
+      margin-bottom: 7px;
     }
     @media @desktop-widths {
       margin-bottom: 8px;
@@ -611,6 +617,7 @@
   color: @grey-a;
   padding: 12px 15px;
   outline: none;
+  max-width: 100%;
   @media @tablet-widths {
     font-size: 19px;
     .line-height(18; 19);
@@ -738,8 +745,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 72px;
+    width: 500px;
   }
-
+  @media @desktop-widths {
+    width: 875px;
+  }
   label:nth-of-type(3n) {
     margin-right: 0;
   }
@@ -750,10 +760,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 65px;
-    padding-left: 33px;
+    width: 500px;
   }
   @media @desktop-widths {
     padding-right: 173px;
+    width: 875px;
   }
 }
 
@@ -768,5 +779,14 @@
     @media @mobile-widths-only {
       display: none;
     }
+  }
+}
+
+.order-form__type-variants-wrap {
+  @media @tablet-widths {
+    width: 500px;
+  }
+  @media @desktop-widths {
+    width: 875px;
   }
 }
