@@ -1,16 +1,20 @@
 .catalog-list {
+  @media @tablet-widths {
+    position: relative;
+    top: -8px;
+  }
   @media @desktop-widths {
     display: flex;
     flex-wrap: wrap;
-    .container;
-    position: relative;
-    top: -39px;
-  }
-  @media @desktop-widths {
+    top: -46px;
     margin-bottom: 18px;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    width: 1150px;
   }
-
   .catalog-item:nth-child(3n) {
     margin-right: 0;
     @media @desktop-widths {

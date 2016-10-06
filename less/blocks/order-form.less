@@ -100,6 +100,9 @@
   &:checked + .order-form__type-variant-label::before {
     background: @blue-82-1;
   }
+  &:disabled + .order-form__type-variant-label {
+    opacity: .3;
+  }
 }
 
 .order-form__type-variant-label {
@@ -119,14 +122,13 @@
   @media @desktop-widths {
     margin-top: 15px;
   }
-
   &::before {
     content: "";
     display: inline-block;
     vertical-align: top;
-    box-sizing: content-box;
-    width: 16px;
-    height: 16px;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
     background: @white;
     border: 9px solid @white;
     box-shadow: 0 0 0 2px @grey-27;
@@ -134,7 +136,14 @@
     margin-right: 27px;
     margin-left: 4px;
     margin-top: -5px;
+    @media @mobile-widths-only {
+      min-width: 34px;
+      min-height: 34px;
+      max-width: 34px;
+      max-height: 34px;
+    }
     @media @tablet-widths {
+      box-sizing: content-box;
       width: 22px;
       height: 22px;
       border-width: 13px;
@@ -170,6 +179,9 @@
       background: @grey-95 url("../img/icon-tick.svg") 6px 10px no-repeat;
       background-size: 70%;
     }
+  }
+  &:disabled + .order-form__color-variant-label {
+    opacity: .3;
   }
 }
 
@@ -661,6 +673,9 @@
     width: auto;
     margin: 0;
     padding: 0;
+  }
+  @media @desktop-widths {
+    width: 100%;
   }
 }
 

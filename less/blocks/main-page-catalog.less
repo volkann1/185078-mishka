@@ -116,9 +116,15 @@
 }
 
 .main-page-catalog__item-wrap {
-  .container;
   position: relative;
+  @media @mobile-widths-only {
+    width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
   @media @tablet-widths {
+    margin: 0 auto;
     width: 100%;
     padding-left: 35px;
     padding-right: 100px;

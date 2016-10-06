@@ -34,7 +34,7 @@
   display: block;
   @media @mobile-widths-only {
     padding-bottom: 15px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     border-top: 1px solid #ececec;
@@ -128,6 +128,7 @@
     bottom: 0;
     left: 0;
     width: 267px;
+    margin-left: 33px;
   }
   @media @desktop-widths {
     top: 121px;
@@ -215,7 +216,10 @@
 }
 
 .catalog-item__container {
-  .container;
+    margin: 0 auto;
+  @media @mobile-widths-only {
+    width: 257px;
+  }
   @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
