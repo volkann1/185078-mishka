@@ -100,6 +100,9 @@
   &:checked + .order-form__type-variant-label::before {
     background: @blue-82-1;
   }
+  &:disabled + .order-form__type-variant-label {
+    opacity: .3;
+  }
 }
 
 .order-form__type-variant-label {
@@ -119,7 +122,6 @@
   @media @desktop-widths {
     margin-top: 15px;
   }
-
   &::before {
     content: "";
     display: inline-block;
@@ -177,6 +179,9 @@
       background: @grey-95 url("../img/icon-tick.svg") 6px 10px no-repeat;
       background-size: 70%;
     }
+  }
+  &:disabled + .order-form__color-variant-label {
+    opacity: .3;
   }
 }
 
