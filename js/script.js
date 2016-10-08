@@ -37,21 +37,21 @@ if (toCart != null) {for(var f=0; f<toCart. length; f++){ toCart[f].addEventList
 })}};
 
     if (ymaps != null) {ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
+    var myMap = new ymaps.Map("map", {
             center: [59.939894363827136,30.321958162712296],
             zoom: 15
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: "yandex#search"
         }),
         myPlacemark = new ymaps.Placemark([59.93866696005864,30.322966673301895], {
-            hintContent: 'MISHKA',
-            balloonContent: 'MISHKA здесь'
+            hintContent: "MISHKA",
+            balloonContent: "MISHKA здесь"
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
+            iconLayout: "default#image",
             // Своё изображение иконки метки.
-            iconImageHref: 'img/icon-map-pin.svg',
+            iconImageHref: "img/icon-map-pin.svg",
             // Размеры метки.
             iconImageSize: [67, 100],
             // Смещение левого верхнего угла иконки относительно
